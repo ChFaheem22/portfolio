@@ -375,25 +375,36 @@ body {
   /* About Section */
   .about {
     padding: 2rem 1rem;
-  }
-
-  .h1 {
-    font-size: 2rem;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .img {
-    margin-left: 18px;
-    width: 240px;
-    height: 240px;
-    margin: 0 auto;
+    width: 180px;               /* Make image smaller */
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 1.5rem;      /* Center image and add space below */
+  }
+
+  .h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .box {
+    max-width: 100%;
   }
 
   .box p {
-    text-align: justify;
     font-size: 1rem;
-    text-align: center;
+    line-height: 1.6;
+    text-align: justify;        /* Justify text properly */
+    padding: 0 1rem;
   }
+
 
   /* Projects */
   .project-grid {
