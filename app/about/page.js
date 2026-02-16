@@ -30,7 +30,7 @@ const About = () => {
           that help me grow as a developer.
         </p>
 
-        <a href="/CV.pdf" view="true" className="download-btn">Download Resume</a>
+        <a href="/CV.pdf" view="true" rel="noopener noreferrer" className="download-btn">Download Resume</a>
       </div>
     </div>
   );
