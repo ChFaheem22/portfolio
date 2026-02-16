@@ -1,0 +1,96 @@
+/* app/education/Education.module.css */
+
+.educationSection {
+  padding: 60px 20px;
+  background-color: #f9fafb;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #1f2937;
+  position: relative;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 28px 32px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+}
+
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  margin-bottom: 15px;
+}
+
+.degree {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #111827;
+}
+
+.institution {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+.year {
+  font-size: 0.95rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.description {
+  margin: 12px 0;
+  font-size: 1rem;
+  color: #374151;
+}
+
+.gpa {
+  font-size: 0.95rem;
+  color: #111;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.coursework {
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.coursework ul {
+  margin-top: 6px;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.coursework li {
+  margin-bottom: 4px;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .cardGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

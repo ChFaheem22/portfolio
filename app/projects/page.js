@@ -12,8 +12,45 @@ const Project = () => {
       description:
         "Built a full-stack web application that connects users with local service providers. Key features include user authentication, service listings, real-time booking, and role-based dashboards for customers and providers. Designed a scalable backend and implemented responsive frontend interfaces for seamless interaction.",
       tools: ["MongoDB", "Express.js", "React.js", "Node.js"],
-      link: <a href="https://frontend-woad-beta-94.vercel.app/" target="_blank" className="link">
-        https://frontend-woad-beta-94.vercel.app/</a>,
+      link: (
+        <a
+          href="https://frontend-woad-beta-94.vercel.app/"
+          target="_blank"
+          className="link"
+        >
+          https://frontend-woad-beta-94.vercel.app/
+        </a>
+      ),
+    },
+    {
+      name: "Blog Web Application",
+      description:
+        "Developed a modern blog web application using React and Next.js, focused on clean design, responsive layouts, and optimized performance. Designed the interface with accessibility and smooth navigation in mind, ensuring consistency across devices.",
+      tools: ["HTML", "CSS", "React.js", "Next.js"],
+      link: (
+        <a
+          href="https://blog-three-dun-55.vercel.app/"
+          target="_blank"
+          className="link"
+        >
+          https://blog-three-dun-55.vercel.app/
+        </a>
+      ),
+    },
+    {
+      name: "DriveGo – Car Rental Platform",
+      description:
+        "A full-featured mobile car rental ecosystem built with Flutter. DriveGo solves the friction of traditional rental services by offering real-time vehicle availability, seamless booking flows, and secure identity verification.",
+      tools: ["Flutter", "Dart", "Firebase Authentication", "Cloudinary"],
+      link: (
+        <a
+          href="https://github.com/ChFaheem22/flutter.git"
+          target="_blank"
+          className="link"
+        >
+          GitHub Repository
+        </a>
+      ),
     },
   ];
   return (
@@ -27,7 +64,9 @@ const Project = () => {
             <p>
               <strong>Tools:</strong> {project.tools.join(", ")}
             </p>
-            <p><strong>Link:</strong> {project.link}</p>
+            <p>
+              <strong>Link:</strong> {project.link}
+            </p>
           </div>
         ))}
       </div>

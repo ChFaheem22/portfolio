@@ -1,47 +1,52 @@
+import React from "react";
+import styles from "./Contacts.module.css";
+
 const Contacts = () => {
   return (
-    <div className="contact">
-      <h1>Contact Me</h1>
-      <p>You can reach me via the following platforms:</p>
+    <section className={styles.contactSection}>
+      <div className={styles.contactContainer}>
+        <h1 className={styles.contactTitle}>Let&rsquo;s Connect</h1>
+        <p className={styles.contactSubtitle}>
+          I&rsquo;m always open to discussing new opportunities, collaborations, or ideas.
+        </p>
 
-      <div className="info">
-        <ul>
-          <li>
-            📧 Email:{" "}
-            <a
-              href="mailto:faheemchh779@gmail.com"
-              rel="noopener noreferrer"
-            >
-              faheemchh779@gmail.com
-            </a>
-          </li>
+        <div className={styles.contactGrid}>
 
-          <li>
-            💻 LinkedIn:{" "}
-            <a
-              href="https://www.linkedin.com/in/faheem-95772830b"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://www.linkedin.com/in/faheem-95772830b
-            </a>
-          </li>
+          <a
+            href="mailto:faheemchh779@gmail.com"
+            className={styles.contactCard}
+          >
+            <div className={styles.icon}>📧</div>
+            <h3>Email</h3>
+            <p>faheemchh779@gmail.com</p>
+          </a>
 
-          <li>
-            🔗 GitHub:{" "}
-            <a
-              href="https://github.com/ChFaheem22"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://github.com/ChFaheem22
-            </a>
-          </li>
-        </ul>
+          <a
+            href="https://www.linkedin.com/in/faheem-95772830b"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.contactCard}
+          >
+            <div className={styles.icon}>💼</div>
+            <h3>LinkedIn</h3>
+            <p>Connect professionally</p>
+          </a>
+
+          <a
+            href="https://github.com/ChFaheem22"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.contactCard}
+          >
+            <div className={styles.icon}>💻</div>
+            <h3>GitHub</h3>
+            <p>Explore my repositories</p>
+          </a>
+
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
 export default Contacts;
-

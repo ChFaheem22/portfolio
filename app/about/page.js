@@ -5,20 +5,32 @@ const About = () => {
   return (
     <div className="about">
       <div className="box">
-        <Image src="/pic.jpg" alt="My Pic" className="img" width={240} height={240} />
+        <Image src="/pic-2.jpeg" alt="Cover Image" className="img" width={300} height={300} />
       </div>
 
       <div className="box">
         <h1 className="h1">About Me</h1>
         <p>
-          I&rsquo;m Faheem, a frontend developer with a passion for creating interactive and user-friendly web interfaces.
-          I&rsquo;m currently pursuing a <b>Bachelor of Science in Software Engineering</b>, were I&rsquo;m building a strong foundation in software development and problem-solving.
-          Alongside my studies, I&rsquo;m actively expanding expanding my skills in modern web development by learning <b>React.js</b> and <b>Next.js</b>.
-          I enjoy building responsive, accessible websites and constantly seek to improve both my design sense and technical abilities.
-          My core technologies include <b> HTML, CSS, JavaScript, React,</b> and <b>Next.js</b>.
+          I&rsquo;m Faheem, a dedicated <b> Frontend Developer</b> and Software Engineering student <b></b> 
+          with a strong interest in building modern, scalable, and performance driven 
+          web applications. I enjoy transforming ideas into clean, responsive, and 
+          intuitive digital experiences.
         </p>
 
-        <a href="/cv.pdf" view="true" className="download-btn">Download CV</a>
+        <p>
+          My primary focus is on <b>React.js</b> and <b>Next.js</b>, where I work on creating 
+          reusable components, structured architectures, and smooth user interactions. 
+          I pay close attention to performance, accessibility, and detail because 
+          I believe great products are built through thoughtful design and clean code.
+        </p>
+        <p>
+          Alongside my academic journey, I continuously work on real-world projects 
+          to strengthen my problem-solving skills and <b>Full-stack understanding</b>. 
+          I am always eager to learn, improve, and take on challenging opportunities 
+          that help me grow as a developer.
+        </p>
+
+        <a href="/CV.pdf" view="true" className="download-btn">Download Resume</a>
       </div>
     </div>
   );
